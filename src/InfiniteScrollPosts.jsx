@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 const InfiniteScrollPosts = () => {
   const [card, setCard] = useState([]);
   const [page, setPage] = useState(1);
-  const [loading, setLoading] = useState(null);
+  const [loading, setLoading] = useState([]);
 
   const getCardData = async () => {
     try {
